@@ -1,0 +1,8 @@
+{
+  "name": "Remix DELE 西班牙语备考助手",
+  "description": "专业 DELE 考试备考工具：AI 智能编织备考词汇生成高分作文、全等级（A1-C2）评分标准对标、双语对照、填空自测及专属生词本。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #1C2822; /* Dark Pine Green */
+  --ink: #F2F2E2; /* Off-white / Cream */
+  --accent: #D9A066; /* Hazelnut Brown */
+  --pine-light: #2D4034; /* Card Background */
+  --beige: #C5BC8E;
+  --ink-faint: rgba(242, 242, 226, 0.12);
+  --side-rail-bg: #141D19;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom Font Utilities */
+.font-display {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Reading area background classes */
+.bg-reading-light {
+  background-color: #E3E0CB;
+}
+
+.bg-reading-dark {
+  background-color: #1C2822;
+}
+
+/* Variation 2 Specific Component Styles */
+.tag-hazelnut {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  margin: 0 0.4rem 0.4rem 0;
+  background: rgba(217, 160, 102, 0.12);
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.badge-hazelnut {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 0.15rem 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.card-pine {
+  background: var(--pine-light);
+  border: 1px solid var(--ink-faint);
+  border-radius: 12px;
+  position: relative;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-pine:hover {
+  border-color: rgba(217, 160, 102, 0.3);
+}
+
+/* Custom selection styling */
+::selection {
+  background-color: #D9A066;
+  color: #1C2822;
+}
+
+.dark ::selection {
+  background-color: #D9A066;
+  color: #1C2822;
+}
+
